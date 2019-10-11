@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build hello world",
+      "type": "shell",
+      "command": "g++",
+      "args": ["-g", "-o", "hello", "helloworld.cpp"], // Note [ 0, 1, 2, 3] 2 = output file name, 3 = file to compile (c or c++)
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
