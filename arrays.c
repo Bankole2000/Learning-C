@@ -16,7 +16,7 @@ int main(){
 
   int foo; // declare variable
   int bar = 1;  // declare and assign value to variable
-  int a = 0, b = 1, c = 2, d =3, e = 4, array[2]{5, 10};  // declare and assign multiple variables
+  int a = 0, b = 1, c = 2, d =3, e = 4, array[2] = {5, 10};  // declare and assign multiple variables
   a = b - c + d * e;  // re-assign variable to arithmetic function of other variables
   printf("%d \n\n", a); // %d indicates variable to be inputed 'a' is a digit
 
