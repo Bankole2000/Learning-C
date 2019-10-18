@@ -5,7 +5,7 @@
       "label": "build hello world",
       "type": "shell",
       "command": "g++",
-      "args": ["-g", "-o", "array", "arrays.c"], // Note [ 0, 1, 2, 3] 2 = output file name, 3 = file to compile (c or c++)
+      "args": ["-g", "-o", "hanoi", "hanoi.c"], // Note [ 0, 1, 2, 3] 2 = output file name, 3 = file to compile (c or c++)
       "group": {
         "kind": "build",
         "isDefault": true

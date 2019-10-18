@@ -28,13 +28,13 @@ int main(void){
   int bar = 1;  // declare and assign value to variable
   int a = 0, b = 1, c = 2, d =3, e = 4, array[2] = {5, 10};  // declare and assign multiple variables
   a = b - c + d * e;  // re-assign variable to arithmetic function of other variables
-  printf("%d \n\n", a); // %d indicates variable to be inputed 'a' is a digit
+  printf("%6d \n\n", a); // %d indicates variable to be inputed 'a' is a digit
 
   int numbers[10]; // defines a zero based array of 10 integers
   numbers[1] = 16; // assigns the value of 16 to the 1st index of the numbers array
   printf("%d is from Numbers[] while %d is from array[]\n\n", numbers[0], array[1]); // Trying to print an unassigned index of an array returns 0 
   // Variable Parameters in Printf function
-  // %d - integers, %.2f - float (2 decimal places),
+  // %2d - 2 integers, %.2f - float (2 decimal places),
 
 
   // Multidimensional arrays
