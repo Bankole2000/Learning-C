@@ -26,6 +26,7 @@ int main(int argc, char *argv[])
        exit(0);
     }
     portno = atoi(argv[2]);
+    
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd < 0) 
         error("ERROR opening socket");
@@ -42,6 +43,7 @@ int main(int argc, char *argv[])
     serv_addr.sin_port = htons(portno);
     if (connect(sockfd,(struct sockaddr *)&serv_addr,sizeof(serv_addr)) < 0) 
         error("ERROR connecting");
+    while (1) {
     printf("Please enter the message: ");
     bzero(buffer,256);
     fgets(buffer,255,stdin);
@@ -53,5 +55,6 @@ int main(int argc, char *argv[])
     if (n < 0) 
          error("ERROR reading from socket");
     printf("%s\n",buffer);
+    };
     return 0;
 }

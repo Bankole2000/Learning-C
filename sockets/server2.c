@@ -37,6 +37,7 @@ int main(int argc, char *argv[])
               error("ERROR on binding");
      listen(sockfd,5);
      clilen = sizeof(cli_addr);
+     while (1) {
      newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, &clilen);
      if (newsockfd < 0) 
           error("ERROR on accept");
@@ -45,6 +46,7 @@ int main(int argc, char *argv[])
      if (n < 0) error("ERROR reading from socket");
      printf("Here is the message: %s\n",buffer);
      n = write(newsockfd,"I got your message",18);
-     if (n < 0) error("ERROR writing to socket");
+     if (n < 0) error("ERROR writing to socket"); 
+     };
      return 0; 
 }
