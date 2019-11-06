@@ -5,7 +5,7 @@
 #include<string.h> // for string fxns
 
 /* 
-// DESCRIPTION:
+// DESCRIPTION: QUEUES (FIFO stack)
   
   TODO: Test All Code Operations - 
   PUSH, POP, ADD, SUB, MUL, DIVIDE, 
@@ -45,7 +45,7 @@ int main(int argc, char* argv[]) {
      clear(); */
     
     // one memory slot
-    int mem; 
+    int mem;
 
     // interpret commands in argv[];
     if(argc > 1) {
