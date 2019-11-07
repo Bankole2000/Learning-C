@@ -27,3 +27,9 @@ gcc doublyList.c -o doublyList
 gcc pointers.c -o pointer
 ./pointer.exe 
 clear
+exit
+ls
+cd ..
+gcc pointers.c -o pointers
+./pointers
+ls
