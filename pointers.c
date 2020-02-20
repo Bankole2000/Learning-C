@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main () {
+int main(){
 
   int  var1;
   char var2[10];

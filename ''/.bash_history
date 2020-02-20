@@ -33,3 +33,28 @@ cd ..
 gcc pointers.c -o pointers
 ./pointers
 ls
+task
+tasks
+task
+exit
+ls
+cd ..
+cd sockets/
+ls
+cd server
+./server
+./server 500
+clear
+./client 200
+./client localhost 200
+exit
+ls
+cd .
+cd ..
+cd sockets/
+./client
+./client 500
+./client localhost 500
+clear
+./server 200
+exit
